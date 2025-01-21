@@ -42,6 +42,14 @@ body ul>li{
 }
 
 
+.commone-bg-img{
+    background-image: url(../assets/bg.png);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 
 
 
@@ -122,18 +130,95 @@ color: #FEA301;
     display: none;
 }
 .banner-container{
+    align-items: center;
     justify-content: space-between;
-    align-content: center;
 }
 .banner-content{
-    max-width: 50%;
+    max-width: 640px;
 }
-.banner-img{
+
+.banner-img img{
     width: 100%;
 }
+.banner-content h1{
+    font-size: 3.5rem;
+    color: #111111;
+    line-height: 61px;
+    /* margin-bottom: 10px; */
+}
+.Empowering{
+    color: #FEA301;
+}
+.towards{
+    color:#01ACFD ;
+}
+
+.banner-content p{
+    font-size: 1.25rem;
+    color: #111111;
+    /* margin-bottom: 10px; */
+    padding: 17px 0px;
+}
+.banner-content button{
+    font-size: 1.25rem;
+    font-weight: 700;
+    color:#FFFFFF ;
+    padding: 10px 30px;
+    background-color: #111111;
+    border-radius:12px ;
+    border: 1px solid black;
+}
+.banner-content button:hover{
+    color: #111111;
+    background-color: #FFFFFF;
+}
+
+
 
 
 /* header style end */
+
+
+/* main style start */
+/* Standard-Curriculum-section style start */
+.chevoron-icon span>i{
+    font-size: 15px;
+}
+
+.chevoron-icon span{
+
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    background-color: #FEA301;
+    text-align: center;
+    border-radius: 50%;
+ 
+}
+
+
+
+
+
+
+
+/* Standard-Curriculum-section style end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* main style end */
 
 
 
@@ -145,6 +230,7 @@ color: #FEA301;
 /* mobile style start */
 @media screen and (max-width:576px){
 
+    /* header style start */
     .link-list,
     .contact-btn button{
         display: none;
@@ -153,6 +239,12 @@ color: #FEA301;
     .contact-btn>i{
         display: block;
     }
+    .banner-container{
+        flex-direction: column-reverse;
+    }
+    .banner-content{
+        text-align: center;
+    }
     
-    
+    /* header style end */
 }
