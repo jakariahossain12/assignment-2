@@ -1,3 +1,158 @@
-h1{
-    color: aqua;
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+
+.quicksand-font {
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* share style start */
+body a{
+    text-decoration: none;
+    color: black;
+}
+
+body ul>li{
+    list-style: none;
+}
+.commone-margin{
+    max-width: 1158px;
+    margin: 20px auto;
+    padding: 0 10px;
+}
+.display-flex{
+    display: flex;
+}
+
+.link-hover-style:hover{
+    color: #be0505;
+    
+}
+
+
+
+
+
+
+
+
+
+
+/* share style end */
+
+
+
+
+/* header style start */
+
+/* nav-bar */
+.nav-bar{
+    align-items: center;
+    justify-content: space-between;
+}
+.school{
+    justify-content: center;
+    align-items: center;
+}
+.school span{
+    font-size: 2rem;
+    font-weight: 700;
+    color: #111111;
+}
+
+.link-list{
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.link-list>li>a{
+    font-size: 1.25rem;
+    font-weight: 700;
+
+}
+.Home{
+    color:#FEA301 ;
+}
+
+.About{
+
+    color:#01ACFD ;
+}
+.Facilities{
+    color:rgba(5, 212, 223, 1) ;
+}
+.Admission{
+    color:rgba(93, 88, 239, 1) ;
+}
+
+.contact-btn{
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-btn button{
+    font-size: 1.25rem;
+    font-weight: 600;
+    color:#FFFFFF ;
+    padding: 10px 30px;
+    background-color: #FEA301;
+    border-radius:12px;
+    border: none;
+    border: 1px solid #FEA301;
+
+}
+.contact-btn button:hover{
+background-color: #FFFFFF;
+color: #FEA301;
+}
+.contact-btn>i{
+   font-size: 40px;
+    display: none;
+}
+.banner-container{
+    justify-content: space-between;
+    align-content: center;
+}
+.banner-content{
+    max-width: 50%;
+}
+.banner-img{
+    width: 100%;
+}
+
+
+/* header style end */
+
+
+
+
+
+
+
+
+/* mobile style start */
+@media screen and (max-width:576px){
+
+    .link-list,
+    .contact-btn button{
+        display: none;
+    }
+
+    .contact-btn>i{
+        display: block;
+    }
+    
+    
 }
