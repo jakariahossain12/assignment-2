@@ -290,18 +290,164 @@ width: 100%;
 
 
 
-
-
-
-
 /* Standard-Curriculum-section style end */
 
+/* stories-section style start */
+
+.our-stories-section{
+    background-image: linear-gradient(rgba(255, 255, 255, 0.466),rgba(254, 161, 1, 0.411)  ),
+     url(../assets/bg.png);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 0px;
+}
+.stories-container{
+    text-align: center;
+    margin-bottom: 0px;
+}
+.stories-content{
+    
+        max-width: 1160px;
+        margin: 70px 0px;
+        display: grid;
+       
+
+        grid-template-areas:
+        'a-fun a-fun find-out summer'
+        'a-fun a-fun classroom conversation'
+        ;
+    
+        gap: 10px;
+        
+}
+.storie-item img{
+    width: 100%;
+}
+.storie-item{
+    background-color: #FFFFFF;
+}
 
 
+.storie-item-1{
+    grid-area: a-fun;
+    
+}
 
 
+.storie-item-2{
+    grid-area: find-out;
+}
+
+.storie-item-3{
+    grid-area: summer;
+}
+
+.storie-item-4{
+    grid-area: classroom;
+}
+
+.storie-item-5{
+    grid-area: conversation;
+}
+
+.storie-item{
+    
+   border-radius: 16px;
+   overflow: hidden;
+   
+}
+
+.content-box{
+    text-align: start;
+    padding: 20px;
+}
+.content-box span{
+  font-size: 0.95rem;  
+  font-weight: 500;
+  color:#FFFFFF;
+  display: inline-block;
+}
+
+.storie-item-1>.content-box>span{
+    background-color: rgba(60, 216, 232, 1);
+    padding: 10px;
+    border-radius: 47px;
+    position: absolute;
+    margin-top: -45px;
+}
+
+.storie-item-2>.content-box>span{
+    background-color: rgba(149, 178, 38, 1);
+    padding: 10px;
+    border-radius: 47px;
+    position: absolute;
+    margin-top: -45px;
+}
 
 
+.storie-item-3>.content-box>span{
+    background-color: rgba(93, 88, 240, 1);
+    padding: 10px;
+    border-radius: 47px;
+    position: absolute;
+    margin-top: -45px;
+}
+
+
+.storie-item-4>.content-box>span{
+    background-color: rgb(60, 232, 175);
+    padding: 10px;
+    border-radius: 47px;
+    position: absolute;
+    margin-top: -45px;
+}
+
+.storie-item-5>.content-box>span{
+    background-color: rgba(75, 10, 129, 0.934);
+    padding: 10px;
+    border-radius: 47px;
+    position: absolute;
+    margin-top: -45px;
+}
+.content-box h3{
+    font-size: 1rem;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 1);
+    line-height: 28px;
+    margin-top: 7px;
+}
+
+.storie-item-1>.content-box>h3{
+
+    font-size: 1.5rem;
+    line-height: 38px;
+
+}
+
+.storie-item-1>.content-box>p{
+
+    font-size: 1rem;
+    line-height: 28px;
+    color: rgba(102, 102, 102, 1);
+    margin-top: 20px;
+
+}
+
+.stories-container button{
+    margin-bottom: 60px;
+    font-size: 1rem;
+    color: #FFFFFF;
+    background-color: #111111;
+    font-weight: 600;
+    border-radius: 12px;
+    padding: 10px 30px;
+    border: none;
+}
+
+
+/* stories-section style end */
 
 
 
@@ -313,6 +459,73 @@ width: 100%;
 /* main style end */
 
 
+/* footer style start*/
+
+.footer{
+    width: 100%;
+    background-color:rgba(1, 172, 253, 1) ;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   
+}
+
+ .footer-container{
+
+    /* min-width: 1070px;
+    margin: 0 auto; */
+    display: grid;
+    
+    grid-template-columns: repeat(3,1fr);
+    justify-items: center;
+    
+
+    padding: 40px;
+}
+.footer-logo span{
+    /* display: inline-block; */
+    font-size: 1.45rem;
+    color: #FFFFFF;
+    font-weight: 700;
+}
+.footer-logo{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    margin-bottom:35px ;
+}
+
+.footer-container p{
+    font-size: 1.25rem;
+    color: #FFFFFF;
+
+}
+
+.about-link h4{
+    font-size: 1.5rem;
+    color: #FFFFFF;
+    font-weight: 700;
+    margin-bottom: 32px;
+}
+
+.about-link ul{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+
+.about-link ul>li>a{
+    color: #FFFFFF;
+    font-size: 1.25rem;
+}
+
+.keep-touch h4{
+    font-size: 1.5rem;
+    color: #FFFFFF;
+    font-weight: 700;
+    margin-bottom: 32px;
+}
 
 
 
@@ -332,7 +545,8 @@ width: 100%;
     }
     .link-list,
     .contact-btn button,
-    .chevoron-icon
+    .chevoron-icon,
+    .storie-item-1
     {
         display: none;
     }
@@ -357,5 +571,21 @@ width: 100%;
         gap: 20px;
     }
 
+    .stories-content{
+
+        grid-template-areas:
+        ' find-out summer'
+        ' classroom conversation'
+        ;
+    }
+ 
      /* main style end */
+
+     /* footer */
+     .footer-container{
+        grid-template-columns: 1fr;
+        /* align-content: start; */
+        justify-items: start;
+        gap: 25px;
+     }
 }
