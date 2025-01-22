@@ -175,6 +175,13 @@ color: #FEA301;
 }
 
 
+.marquee marquee{
+
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #FEA301;
+    line-height: 28px;
+}
 
 
 /* header style end */
@@ -184,6 +191,8 @@ color: #FEA301;
 /* Standard-Curriculum-section style start */
 .chevoron-icon span>i{
     font-size: 15px;
+    color: #FFFFFF;
+    cursor: pointer;
     
 }
 
