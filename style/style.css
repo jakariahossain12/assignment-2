@@ -43,6 +43,7 @@ body ul>li{
 
 
 .commone-bg-img{
+    margin: 60px 0;
     background-image: url(../assets/bg.png);
     width: 100%;
     background-repeat: no-repeat;
@@ -183,17 +184,108 @@ color: #FEA301;
 /* Standard-Curriculum-section style start */
 .chevoron-icon span>i{
     font-size: 15px;
+    
 }
 
 .chevoron-icon span{
 
     display: inline-block;
+    
     height: 25px;
     width: 25px;
     background-color: #FEA301;
     text-align: center;
     border-radius: 50%;
  
+}
+
+.Standard-item-container{
+    text-align: center;
+}
+.Standard-item-container h2{
+    font-size: 3rem;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 1);
+}
+.Standard-item-content {
+max-width: 1160px;
+margin: 70px 0px;
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 20px;
+}
+
+.Standard-item-content>.item{
+    padding: 10px;
+    border-radius:18px ;
+    /* box-shadow: 3px 3px ; */
+    border: none;
+}
+
+/* .Standard-item-content>.item img{
+width: 100%;
+} */
+
+
+.Standard-item-content>.item h3{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: rgba(32, 32, 32, 1);
+    padding-top: 10px;
+}
+
+.Standard-item-content>.item p{
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: rgba(128, 128, 128, 1);
+    padding: 20px 0;
+    line-height: 28px;
+}
+
+.Standard-item-content>.item span{
+
+    display: inline-block;
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: rgba(128, 128, 128, 1);
+    margin-bottom: 20px;
+    
+}
+.Standard-item-content>.item span:hover{
+
+    color: #be0505;
+    cursor: pointer;
+}
+
+.Standard-item-content>.item-1{
+    background-image: linear-gradient(rgba(222, 245, 255, 1) ,rgba(255, 255, 255, 1));
+    border: 1px solid rgba(222, 245, 255, 1);
+}
+
+.Standard-item-content>.item-1>span{
+
+    color: rgba(100, 200, 255, 1);
+}
+
+.Standard-item-content>.item-2{
+    background-image: linear-gradient(rgba(255, 244, 220, 1) ,rgba(255, 255, 255, 1));
+    border: 1px solid rgba(255, 244, 220, 1);
+}
+
+.Standard-item-content>.item-2>span{
+
+    color: rgba(240, 170, 0, 1);
+}
+
+.Standard-item-content>.item-3{
+    background-image: linear-gradient(rgba(242, 232, 255, 1) 0%, #FFFFFF);
+    border: 1px solid rgba(242, 232, 255, 1);
+}
+
+
+.Standard-item-content>.item-3>span{
+
+    color: rgba(135, 0, 255, 1);
 }
 
 
@@ -231,8 +323,17 @@ color: #FEA301;
 @media screen and (max-width:576px){
 
     /* header style start */
+    .nav-bar{
+
+        /* padding: 20px 0; */
+        /* margin-top: 0%; */
+        padding-bottom: 20px;
+    border-bottom: 1px solid #FEA301;
+    }
     .link-list,
-    .contact-btn button{
+    .contact-btn button,
+    .chevoron-icon
+    {
         display: none;
     }
 
@@ -241,10 +342,20 @@ color: #FEA301;
     }
     .banner-container{
         flex-direction: column-reverse;
+        gap: 20px;
     }
     .banner-content{
         text-align: center;
     }
     
     /* header style end */
+
+    /* main style start */
+    /* 1 */
+    .Standard-item-content{
+        grid-template-columns:1fr ;
+        gap: 20px;
+    }
+
+     /* main style end */
 }
